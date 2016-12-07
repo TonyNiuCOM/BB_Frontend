@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA578A271DF24C4F007750E8 /* ImageTargetView.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA578A251DF24C4E007750E8 /* ImageTargetView.mm */; };
 		EA578A301DF24D81007750E8 /* building_texture.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EA578A291DF24D81007750E8 /* building_texture.jpeg */; };
 		EA578A311DF24D81007750E8 /* buildings.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA578A2A1DF24D81007750E8 /* buildings.txt */; };
 		EA578A321DF24D81007750E8 /* TextureTeapotBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = EA578A2B1DF24D81007750E8 /* TextureTeapotBlue.png */; };
@@ -21,10 +20,13 @@
 		EA578A411DF2507A007750E8 /* IT.png in Resources */ = {isa = PBXBuildFile; fileRef = EA578A3B1DF2507A007750E8 /* IT.png */; };
 		EA578A421DF2507A007750E8 /* Tarmac.dat in Resources */ = {isa = PBXBuildFile; fileRef = EA578A3C1DF2507A007750E8 /* Tarmac.dat */; };
 		EA578A431DF2507A007750E8 /* Tarmac.xml in Resources */ = {isa = PBXBuildFile; fileRef = EA578A3D1DF2507A007750E8 /* Tarmac.xml */; };
-		EA578A461DF4CF0B007750E8 /* EntranceViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA578A451DF4CF0B007750E8 /* EntranceViewController.mm */; };
+		EA578A481DF787E1007750E8 /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA578A471DF787E1007750E8 /* libVuforia.a */; };
+		EA578A521DF78814007750E8 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA578A4A1DF78814007750E8 /* ViewController.mm */; };
+		EA578A531DF78814007750E8 /* EntranceViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA578A4B1DF78814007750E8 /* EntranceViewController.mm */; };
+		EA578A541DF78814007750E8 /* ImageTargetView.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA578A4E1DF78814007750E8 /* ImageTargetView.mm */; };
+		EA578A551DF78814007750E8 /* UIView+ImageTargetView.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA578A511DF78814007750E8 /* UIView+ImageTargetView.mm */; };
 		EAC804631DF0B3B00011FEE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC804621DF0B3B00011FEE1 /* main.m */; };
 		EAC804661DF0B3B00011FEE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC804651DF0B3B00011FEE1 /* AppDelegate.m */; };
-		EAC804691DF0B3B00011FEE1 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EAC804681DF0B3B00011FEE1 /* ViewController.mm */; };
 		EAC8046C1DF0B3B00011FEE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC8046A1DF0B3B00011FEE1 /* Main.storyboard */; };
 		EAC8046E1DF0B3B00011FEE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC8046D1DF0B3B00011FEE1 /* Assets.xcassets */; };
 		EAC804711DF0B3B00011FEE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC8046F1DF0B3B00011FEE1 /* LaunchScreen.storyboard */; };
@@ -34,7 +36,6 @@
 		EAC804E01DF0CD220011FEE1 /* SampleApplicationUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAC804D41DF0CD220011FEE1 /* SampleApplicationUtils.cpp */; };
 		EAC804E11DF0CD220011FEE1 /* SampleAppRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = EAC804D71DF0CD220011FEE1 /* SampleAppRenderer.mm */; };
 		EAC804E21DF0CD220011FEE1 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = EAC804DB1DF0CD220011FEE1 /* Texture.mm */; };
-		EAC804E81DF0D3950011FEE1 /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC804E71DF0D3950011FEE1 /* libVuforia.a */; };
 		EAC804F01DF0D5FF0011FEE1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC804EF1DF0D5FF0011FEE1 /* SystemConfiguration.framework */; };
 		EAC804F31DF0D6410011FEE1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC804EA1DF0D5A60011FEE1 /* Security.framework */; };
 		EAC804F51DF0D6620011FEE1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC804F41DF0D6620011FEE1 /* CoreMedia.framework */; };
@@ -55,8 +56,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EA578A251DF24C4E007750E8 /* ImageTargetView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ImageTargetView.mm; path = ../ImageTargetView.mm; sourceTree = "<group>"; };
-		EA578A261DF24C4E007750E8 /* ImageTargetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageTargetView.h; path = ../ImageTargetView.h; sourceTree = "<group>"; };
 		EA578A291DF24D81007750E8 /* building_texture.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = building_texture.jpeg; path = BuzzBrotherDemo/Resources/Assets/building_texture.jpeg; sourceTree = "<group>"; };
 		EA578A2A1DF24D81007750E8 /* buildings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = buildings.txt; path = BuzzBrotherDemo/Resources/Assets/buildings.txt; sourceTree = "<group>"; };
 		EA578A2B1DF24D81007750E8 /* TextureTeapotBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TextureTeapotBlue.png; path = BuzzBrotherDemo/Resources/Assets/TextureTeapotBlue.png; sourceTree = "<group>"; };
@@ -70,14 +69,19 @@
 		EA578A3B1DF2507A007750E8 /* IT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IT.png; path = BuzzBrotherDemo/Resources/Assets/ImageTargets/IT.png; sourceTree = "<group>"; };
 		EA578A3C1DF2507A007750E8 /* Tarmac.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tarmac.dat; path = BuzzBrotherDemo/Resources/Assets/ImageTargets/Tarmac.dat; sourceTree = "<group>"; };
 		EA578A3D1DF2507A007750E8 /* Tarmac.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Tarmac.xml; path = BuzzBrotherDemo/Resources/Assets/ImageTargets/Tarmac.xml; sourceTree = "<group>"; };
-		EA578A441DF4CF0B007750E8 /* EntranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntranceViewController.h; path = SampleApplication/EntranceViewController.h; sourceTree = "<group>"; };
-		EA578A451DF4CF0B007750E8 /* EntranceViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EntranceViewController.mm; path = SampleApplication/EntranceViewController.mm; sourceTree = "<group>"; };
+		EA578A471DF787E1007750E8 /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVuforia.a; path = BuzzBrotherDemo/build/libVuforia.a; sourceTree = "<group>"; };
+		EA578A4A1DF78814007750E8 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = "View+Controller/ViewController.mm"; sourceTree = "<group>"; };
+		EA578A4B1DF78814007750E8 /* EntranceViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EntranceViewController.mm; path = "View+Controller/EntranceViewController.mm"; sourceTree = "<group>"; };
+		EA578A4C1DF78814007750E8 /* EntranceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntranceViewController.h; path = "View+Controller/EntranceViewController.h"; sourceTree = "<group>"; };
+		EA578A4D1DF78814007750E8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "View+Controller/ViewController.h"; sourceTree = "<group>"; };
+		EA578A4E1DF78814007750E8 /* ImageTargetView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ImageTargetView.mm; path = "View+Controller/ImageTargetView.mm"; sourceTree = "<group>"; };
+		EA578A4F1DF78814007750E8 /* ImageTargetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageTargetView.h; path = "View+Controller/ImageTargetView.h"; sourceTree = "<group>"; };
+		EA578A501DF78814007750E8 /* UIView+ImageTargetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ImageTargetView.h"; path = "View+Controller/UIView+ImageTargetView.h"; sourceTree = "<group>"; };
+		EA578A511DF78814007750E8 /* UIView+ImageTargetView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "UIView+ImageTargetView.mm"; path = "View+Controller/UIView+ImageTargetView.mm"; sourceTree = "<group>"; };
 		EAC8045E1DF0B3B00011FEE1 /* BuzzBrotherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzBrotherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC804621DF0B3B00011FEE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAC804641DF0B3B00011FEE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAC804651DF0B3B00011FEE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EAC804671DF0B3B00011FEE1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EAC804681DF0B3B00011FEE1 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		EAC8046B1DF0B3B00011FEE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAC8046D1DF0B3B00011FEE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAC804701DF0B3B00011FEE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,7 +101,6 @@
 		EAC804D91DF0CD220011FEE1 /* Teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Teapot.h; path = SampleApplication/Teapot.h; sourceTree = "<group>"; };
 		EAC804DA1DF0CD220011FEE1 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = SampleApplication/Texture.h; sourceTree = "<group>"; };
 		EAC804DB1DF0CD220011FEE1 /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Texture.mm; path = SampleApplication/Texture.mm; sourceTree = "<group>"; };
-		EAC804E71DF0D3950011FEE1 /* libVuforia.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVuforia.a; sourceTree = "<group>"; };
 		EAC804EA1DF0D5A60011FEE1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EAC804EF1DF0D5FF0011FEE1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EAC804F41DF0D6620011FEE1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -129,12 +132,12 @@
 				EAC805031DF0D6CB0011FEE1 /* Foundation.framework in Frameworks */,
 				EAC805011DF0D6B90011FEE1 /* MediaPlayer.framework in Frameworks */,
 				EAC804FF1DF0D6AB0011FEE1 /* QuartzCore.framework in Frameworks */,
+				EA578A481DF787E1007750E8 /* libVuforia.a in Frameworks */,
 				EAC804FD1DF0D69E0011FEE1 /* OpenGLES.framework in Frameworks */,
 				EAC804F91DF0D6850011FEE1 /* CoreMotion.framework in Frameworks */,
 				EAC804F51DF0D6620011FEE1 /* CoreMedia.framework in Frameworks */,
 				EAC804F31DF0D6410011FEE1 /* Security.framework in Frameworks */,
 				EAC804F01DF0D5FF0011FEE1 /* SystemConfiguration.framework in Frameworks */,
-				EAC804E81DF0D3950011FEE1 /* libVuforia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,11 +172,25 @@
 			name = Targetmodels;
 			sourceTree = "<group>";
 		};
+		EA578A491DF78800007750E8 /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA578A4A1DF78814007750E8 /* ViewController.mm */,
+				EA578A4B1DF78814007750E8 /* EntranceViewController.mm */,
+				EA578A4C1DF78814007750E8 /* EntranceViewController.h */,
+				EA578A4D1DF78814007750E8 /* ViewController.h */,
+				EA578A4E1DF78814007750E8 /* ImageTargetView.mm */,
+				EA578A4F1DF78814007750E8 /* ImageTargetView.h */,
+				EA578A501DF78814007750E8 /* UIView+ImageTargetView.h */,
+				EA578A511DF78814007750E8 /* UIView+ImageTargetView.mm */,
+			);
+			name = "View+Controller";
+			sourceTree = "<group>";
+		};
 		EAC804551DF0B3B00011FEE1 = {
 			isa = PBXGroup;
 			children = (
 				EA578A281DF24D6B007750E8 /* Resources */,
-				EAC804E71DF0D3950011FEE1 /* libVuforia.a */,
 				EAC804601DF0B3B00011FEE1 /* BuzzBrotherDemo */,
 				EAC8045F1DF0B3B00011FEE1 /* Products */,
 				EAC804E91DF0D5A60011FEE1 /* Frameworks */,
@@ -191,20 +208,15 @@
 		EAC804601DF0B3B00011FEE1 /* BuzzBrotherDemo */ = {
 			isa = PBXGroup;
 			children = (
-				EA578A251DF24C4E007750E8 /* ImageTargetView.mm */,
-				EA578A261DF24C4E007750E8 /* ImageTargetView.h */,
+				EA578A491DF78800007750E8 /* View+Controller */,
 				EAC804641DF0B3B00011FEE1 /* AppDelegate.h */,
 				EAC804651DF0B3B00011FEE1 /* AppDelegate.m */,
-				EAC804671DF0B3B00011FEE1 /* ViewController.h */,
-				EAC804681DF0B3B00011FEE1 /* ViewController.mm */,
 				EAC8046A1DF0B3B00011FEE1 /* Main.storyboard */,
 				EAC8046D1DF0B3B00011FEE1 /* Assets.xcassets */,
 				EAC8046F1DF0B3B00011FEE1 /* LaunchScreen.storyboard */,
 				EAC804721DF0B3B00011FEE1 /* Info.plist */,
 				EAC804611DF0B3B00011FEE1 /* Supporting Files */,
 				EAC804CB1DF0CCC20011FEE1 /* ARUtil */,
-				EA578A441DF4CF0B007750E8 /* EntranceViewController.h */,
-				EA578A451DF4CF0B007750E8 /* EntranceViewController.mm */,
 			);
 			path = BuzzBrotherDemo;
 			sourceTree = "<group>";
@@ -243,6 +255,7 @@
 		EAC804E91DF0D5A60011FEE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA578A471DF787E1007750E8 /* libVuforia.a */,
 				EAC805061DF0D6DD0011FEE1 /* AVFoundation.framework */,
 				EAC805041DF0D6D50011FEE1 /* AudioToolbox.framework */,
 				EAC805021DF0D6CA0011FEE1 /* Foundation.framework */,
@@ -365,17 +378,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA578A551DF78814007750E8 /* UIView+ImageTargetView.mm in Sources */,
 				EAC804DF1DF0CD220011FEE1 /* SampleApplicationShaderUtils.m in Sources */,
-				EA578A271DF24C4F007750E8 /* ImageTargetView.mm in Sources */,
+				EA578A541DF78814007750E8 /* ImageTargetView.mm in Sources */,
 				EAC804E21DF0CD220011FEE1 /* Texture.mm in Sources */,
-				EA578A461DF4CF0B007750E8 /* EntranceViewController.mm in Sources */,
-				EAC804691DF0B3B00011FEE1 /* ViewController.mm in Sources */,
 				EAC804E01DF0CD220011FEE1 /* SampleApplicationUtils.cpp in Sources */,
 				EAC804661DF0B3B00011FEE1 /* AppDelegate.m in Sources */,
+				EA578A531DF78814007750E8 /* EntranceViewController.mm in Sources */,
 				EAC804631DF0B3B00011FEE1 /* main.m in Sources */,
 				EAC804E11DF0CD220011FEE1 /* SampleAppRenderer.mm in Sources */,
 				EAC804DC1DF0CD220011FEE1 /* SampleApplicationSession.mm in Sources */,
 				EAC804DE1DF0CD220011FEE1 /* SampleApplication3DModel.m in Sources */,
+				EA578A521DF78814007750E8 /* ViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +519,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BuzzBrotherDemo/build",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonyniu2008.BuzzBrotherDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,6 +539,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BuzzBrotherDemo/build",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonyniu2008.BuzzBrotherDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
